@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+</head>
+<body>
+    <a href="index.html"> &lt; Volver</a>
+    <header>
+        <h1>Nuevo Articulo</h1>
+    </header>
+    <main>
+        <section>
+            <form action="/submit" method="POST">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td width="50%" valign="top">
+                                <fieldset>
+                                    <legend>ARTICULO</legend>
+                    
+                                    <label for="title">Título:</label>
+                                    <div>
+                                        <input type="text" id="title" name="title" required>
+                                    </div>
+
+                                    <br>
+                                    
+                                    <label for="content">Contenido:</label>
+                                    <div>
+                                        <textarea id="content" name="content" rows="5" required></textarea>
+                                    </div>
+                                    
+                                    <br>
+
+                                    <label for="category">Categoría:</label>
+                                    <div>
+                                        <select id="category" name="category">
+                                            <option value="tecnologia">Tecnología</option>
+                                            <option value="ciencia">Ciencia</option>
+                                            <option value="salud">Salud</option>
+                                            <option value="entretenimiento">Entretenimiento</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <br>
+                                    
+                                    <label for="image">Imagen destacada:</label>
+                                    <div>
+                                        <input type="file" id="image" name="image" accept="image/*">
+                                    </div>
+                                </fieldset>
+                            </td>
+                         
+                            <td width="50%">
+                                <fieldset>
+                                    <legend>DATOS</legend>
+                                        <label for="nombre">Código:</label>
+                                        <div>
+                                            <input type="text" id="nombre" name="nombre" required>
+                                        </div>
+
+                                        <br>
+                                    
+                                        <label for="descripcion">Descripción:</label>
+                                        <div>
+                                            <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea>
+                                        </div>
+
+                                        <br>
+                                    
+                                        <label for="precio">Precio:</label>
+                                        <div>
+                                            <input type="number" id="precio" name="precio" step="0.01" required>
+                                        </div>
+
+                                        <br>
+                                    
+                                        <label for="cantidad">Cantidad disponible:</label>
+                                        <div>
+                                            <input type="number" id="cantidad" name="cantidad" required>
+                                        </div>
+                                    
+                                        <br>
+
+                                        <label for="fecha">Fecha de creación:</label>
+                                        <div>
+                                            <input type="date" id="fecha" name="fecha" required>
+                                        </div>
+
+                                        <br>
+
+                                        <label for="disponible">Disponible para:</label>
+                                        <div>
+                                            <label for="todos"><input id="todos" type="checkbox" name="todos">Todos</label>
+                                            <label for="ninios"><input id="ninios" type="checkbox" name="ninios">Niños</label>
+                                            <label for="adultos"><input id="adultos" type="checkbox" name="adultos">Adultos</label>
+                                        </div>
+
+                                        <br>
+
+                                        <label for="">Activo / Inactivo</label>
+                                        <div>
+                                            <label><input id="todos" type="radio" name="activo">Activo</label>
+                                            <label><input id="todos" type="radio" name="activo">Inactivo</label>
+                                        </div>
+                                </fieldset>
+                            </td>
+                         </tr>
+         
+                         <tr>
+                             <th colspan="2">
+                                 <button type="submit">Publicar</button>
+                             </th>
+                         </tr>
+                    </tbody>
+                </table>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mi Blog Personal. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
